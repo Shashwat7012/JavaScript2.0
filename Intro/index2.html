@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>Looping an Array</h2>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<!-- for each function -->
+
+<p id="demoo"></p>
+
+<script>
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+
+let textt = "<ul>";
+fruitss.forEach(myFunction);
+textt += "</ul>";
+
+document.getElementById("demoo").innerHTML = text;
+
+function myFunction(value) {
+  textt += "<li>" + value + "</li>";
+} 
+</script>
+</body>
+</html>
